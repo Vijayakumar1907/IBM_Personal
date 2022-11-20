@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request, redirect, url_for, session
 import ibm_db
+from flask_mysqldb import MySQL
 import re
 
 
@@ -40,7 +41,7 @@ def login():
             return render_template('home-page.html', msg = msg)
         else:
             msg = 'Incorrect username / password !'
-    return render_template('index.html', msg = msg)
+    return render_template('login.html', msg = msg)
 
         
 
