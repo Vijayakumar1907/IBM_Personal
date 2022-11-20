@@ -20,10 +20,8 @@ def home():
 def login():
     global userid
     msg = ''
-   
-  
     if request.method == 'POST' :
-        username = request.form['email']
+        username = request.form['username']
         password = request.form['password']
         sql = "SELECT * FROM user WHERE username =? AND password=?"
         stmt = ibm_db.prepare(conn, sql)
@@ -53,7 +51,7 @@ def register():
         name = request.form['username']
         email = request.form['email']
         password = request.form['password']
-        sql = "SELECT * FROM user WHERE email =?"
+        sql = "SELECT * FROM user WHERE password =?"
         stmt = ibm_db.prepare(conn, sql)
         ibm_db.bind_param(stmt,1,email)
         ibm_db.execute(stmt)
@@ -69,14 +67,49 @@ def register():
             insert_sql = "INSERT INTO  user VALUES (?, ?, ?)"
             prep_stmt = ibm_db.prepare(conn, insert_sql)
             ibm_db.bind_param(prep_stmt,1,name)
-            ibm_db.bind_param(prep_stmt,2,email)
-            ibm_db.bind_param(prep_stmt,3,password)
+            ibm_db.bind_param(prep_stmt,2,password)
+            ibm_db.bind_param(prep_stmt,3,email)
             ibm_db.execute(prep_stmt)
             msg = 'You have successfully registered !'
     elif request.method == 'POST':
         msg = 'Please fill out the form !'
     return render_template('registration.html', msg = msg)
 
+@app.route('/home-page')
+def dashboard():
+    return render_template('home-page.html')
+
+@app.route('/product')
+def product():
+    return render_template('product-screen.html')
+
+@app.route('/cart')
+def cart():
+    return render_template('products-cart.html')
+
+@app.route('/buy-now')
+def buy():
+    return render_template('shopnow.html')
+
+@app.route('/confirm')
+def confirm():
+    return render_template('confirmation.html')
+
+@app.route('/about')
+def about():
+    return render_template('about.html')
+
+
+
+
+
+
+@app.route('/logout')
+def logout():
+    session.pop('loggedin',None)
+    session.pop('id',None)
+    session.pop('username',None)
+    return render_template('index.html')
 
 
 if __name__ == '__main__':

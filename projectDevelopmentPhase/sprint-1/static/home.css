@@ -40,6 +40,26 @@ p {
 }
 
 
+.primary-header .navbar .index_header .index_btn_class {
+
+    border: none;
+    padding: 6px;
+    margin-right: 12px;
+    border-radius: 4px;
+    background-color: #0064ce;
+    color: white;
+
+}
+
+.primary-header .navbar .index_header .index_btn_class:hover {
+
+    border: #044b97 solid 1px;
+    background-color: transparent;
+    color:#044b97 ;
+
+}
+
+
 
 .navbar {
     width: 100%;
