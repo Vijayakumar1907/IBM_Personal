@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../static/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap" rel="stylesheet">
+  <title>Register</title>
+</head>
+<body>
+
+  <p class="success">{{msg}}</p>
+  <form action="/signup" method="POST" enctype="multipart/form-data">
+    <div class="container">
+      <h1 style="font-family:'Poppins',sans-serif ;">Register</h1>
+      <p style="font-family:'Poppins',sans-serif ;">Please fill in this form to create an account.</p>
+      <hr>
+  
+      <label class="label_font" for="username"><b>Username</b></label>
+      <input type="text" placeholder="Enter your name" name="username" id="name" required>
+
+      <label class="label_font" for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" id="email" required>
+  
+      <label class="label_font" for="password"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="password" id="psw" required>
+  
+      <label class="label_font" for="repassword"><b>Repeat Password</b></label>
+      <input type="password" placeholder="Repeat Password" name="repassword" id="psw-repeat" required>
+      <hr>
+  
+      
+      <a href="home-page.html"><button type="button" class="registerbtn" >Register</button></a>
+    </div>
+  
+    <div class="container signin">
+      <p>Already have an account? <a href="index.html">Sign in</a>.</p>
+    </div>
+    <div class="container signin">
+      <p>Already have an account? <a href="home-page.html">Home Page</a>.</p>
+    </div>
+  </form>
+</body>
+</html>

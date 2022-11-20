@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../static/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap" rel="stylesheet">
+  <title>Login</title>
+</head>
+<body>
+  <!-- <p>{{msg}}</p> -->
+  <form action="/login" method="POST" enctype="multipart/form-data">
+    <div class="container">
+      <h1 style="font-family:'Poppins',sans-serif ;">Login</h1>
+      <p style="font-family:'Poppins',sans-serif ;">Welcome back!</p>
+      <hr>
+  
+      <label class="label_font" for="username"><b>Username</b></label>
+      <input type="text" placeholder="Enter your name" name="username" id="name" required>
+  
+      <label class="label_font" for="password"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="password" id="psw" required>
+
+      <hr>
+  
+      
+      <a href="home-page.html"><button type="button" class="registerbtn"> Sign In</button></a>
+    </div>
+  
+    <div class="container signin">
+      <p>New User? <a href="registration.html">Register</a>.</p>
+    </div>
+  </form>
+</body>
+</html>

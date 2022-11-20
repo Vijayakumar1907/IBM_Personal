@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Assignment</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+
+<body>
+    <form method="post" action="/login" class="login_container" enctype="multipart/form-data">
+        <h1>Registration Page</h1>
+
+        <div class="name">
+            <label for="name" class="form_label">Enter the name</label>
+            <input type="text" class="form_control" name="name" id="name" placeholder="Name">
+        </div>
+
+        <div class="qualification">
+            <label for="qualify" class="form_label">Enter the Qualification</label>
+            <input type="text" class="form_control" name="qualify" id="qualify" placeholder="Qualification">
+        </div>
+
+        <div class="age">
+            <label for="age" class="form_label">Enter your age</label>
+            <input type="text" class="form_control" name="age" id="age" placeholder="Age">
+        </div>
+
+        <div class="email">
+
+            <label for="email" class="form_label">Enter your email</label>
+            <input type="email" class="form_control" name="email" id="email" placeholder="Email">
+
+        </div>
+
+        <div class="input_container">
+            <label for="formFileLg" class="form-label input_label">Upload resume</label>
+            <input class="form-control form-control" id="formFileLg" type="file" name="file">
+            <button type="submit" class="btn btn-danger my-4 py-2 px-5">Upload</button>
+        </div>
+
+        <div class="btn">
+            <button type="submit" class="sub_btn">Submit</button>
+        </div>
+    </form>
+
+    <p>{{y}}</p>
+</body>
+
+</html>

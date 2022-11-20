@@ -1,0 +1,28 @@
+body{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+}
+.image_container{
+
+    width: 60%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.image_cust{
+    width: 400px;
+    height: 400px;
+    object-fit:cover ;
+}
+
+p{
+    font-size: 28px;
+}

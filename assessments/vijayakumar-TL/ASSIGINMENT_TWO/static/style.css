@@ -1,0 +1,74 @@
+body {
+
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.login_container {
+
+    border: 1px gray solid;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    width: 350px;
+    border-radius: 12px;
+
+}
+
+.login_container .name {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 8px;
+    gap: 4px;
+    width: 100%;
+}
+
+.login_container .qualification {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 8px;
+    gap: 2px;
+    width: 100%;
+}
+
+.login_container .age {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 8px;
+    gap: 2px;
+    width: 100%;
+
+}
+
+.login_container .email {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 8px;
+    gap: 2px;
+    width: 100%;
+}
+
+.login_container .sub_btn {
+    padding: 14px;
+    border: none;
+    background-color: darkviolet;
+    color: white;
+    font-weight: 500;
+    width: 100%;
+
+}
+
+.form_control {
+    padding: 10px;
+}
+
+.input_container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}

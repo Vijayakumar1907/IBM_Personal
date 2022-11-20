@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment_three</title>
+
+    <!-- <link rel="stylesheet" href="https://bucket-fashion.s3.jp-tok.cloud-object-storage.appdomain.cloud/assignment_three.css"> -->
+    <link rel="stylesheet" href="assignment_three.css">
+</head>
+
+<body>
+    <p>Cloud Images</p>
+    <div class="image_container">
+        <img class="image_cust"
+            src="https://bucket-fashion.s3.jp-tok.cloud-object-storage.appdomain.cloud/cloud_image_one.jpg"
+            alt="Loading">
+        <img class="image_cust"
+            src="https://bucket-fashion.s3.jp-tok.cloud-object-storage.appdomain.cloud/cloud_image_two.jpg"
+            alt="Loading">
+        <img class="image_cust"
+            src="https://bucket-fashion.s3.jp-tok.cloud-object-storage.appdomain.cloud/cloud_image_three.jpg"
+            alt="Loading">
+        <img class="image_cust"
+            src="https://bucket-fashion.s3.jp-tok.cloud-object-storage.appdomain.cloud/cloud_image_four.jpg"
+            alt="Loading">
+        <img class="image_cust"
+            src="https://bucket-fashion.s3.jp-tok.cloud-object-storage.appdomain.cloud/cloud_image_five.jpg"
+            alt="Loading">
+
+    </div>
+    <script>
+        window.watsonAssistantChatOptions = {
+            integrationID: "6cc1a32d-3719-47b4-9a7a-3aa948861473", region: "au-syd",
+            serviceInstanceID: "cc3580bf-1448-4593-a58f-075ae1a72b58", onLoad: function (instance) { instance.render(); }
+        };
+        setTimeout(function () {
+            const t = document.createElement('script');
+            t.src = "https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+            document.head.appendChild(t);
+        });
+    </script>
+
+</body>
+
+</html>
